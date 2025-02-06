@@ -1,0 +1,59 @@
+.sound-recording {
+    background-color: rgb(216, 228, 223);
+    margin: 10rpx 30rpx;
+    border-radius: 20rpx;
+    padding: 5rpx 0rpx;
+  }
+  
+.time {
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 30rpx;
+  }
+  
+  .progress {
+    margin: 20rpx;
+  }
+  
+  
+  .txt {
+    display: flex;
+    justify-content: center;
+    line-height: 60rpx;
+    font-size: 25rpx;
+  }
+
+  .jump-hover {
+    transform: scale(0.9);
+  }
+  .recBtn {
+    margin-top: 50rpx;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius: 15rpx;    
+}
+.recBtn[disabled]{
+    background-color:gray !important;
+}
+
+.res {
+    margin-top: 50rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.res button {
+    margin-top: 50rpx;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius: 15rpx;    
+}
+.res button[disabled]{
+    background-color:gray !important;
+    color:white !important;    
+}

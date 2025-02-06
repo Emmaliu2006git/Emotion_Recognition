@@ -1,0 +1,14 @@
+<view class="sound-recording" style="width: 700rpx; height: 1024rpx; display: block; box-sizing: border-box">
+  <view class="time">{{status==0?'录音时长':(status==3?'录音已完成':'正在录音中')}}：{{time}} 秒</view>
+  <view class="progress">
+    <text class="txt">最大录音时长（{{duration/1000}}秒 = {{duration/60000}}分钟）</text>
+    <progress percent="{{time*(100/(duration/1000))}}" border-radius="10" color="green" stroke-width="10" backgroundColor="#fff" />
+  </view>
+  <view class="res">
+  <button bindtap="start" disabled='{{btn_start}}'>开始聊天啦</button>
+  <button catch:longpress="handleRecordStart" catch:touchend="handleRecordStop"  class="recBtn" hoverClass="jump-hover" data-key="cover" data-size="1" style="background-color:{{backcolor}}" disabled='{{btn_rec}}'>我来说一点儿</button>
+     <button bindtap="upload"  disabled='{{btn_rtn}}'>你来说说吧</button>
+   <button bindtap="exit">休息吧，不聊啦</button>
+   </view>
+  
+</view>
